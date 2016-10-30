@@ -22,6 +22,7 @@ class CreateHoldingsTable extends Migration
             $table->integer('purchase_price');      // purchase price in USD
             $table->integer('quantity');            // quantity purchased
             $table->date('purchase_date');          // date of purchase
+            $table->enum('visibility', ['private', 'public']);
             $table->timestamps();
         
             $table->foreign('user_id')->references('id')->on('users');
