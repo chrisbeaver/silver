@@ -19,6 +19,7 @@
         <div class="container">
             @yield('main-content')
         </div>
+        @include('partials.footer')
         @yield('footer-assets')
     </body>
 </html>

@@ -5766,4 +5766,37 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+body {
+  background-color: #c0c0c0; }
+
+body .container {
+  margin-top: 60px;
+  margin-bottom: 40px; }
+
+.navbar {
+  border: none;
+  border-bottom: 1px solid transparent; }
+
+.navbar .container {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.navbar-default {
+  background-color: #dbdbdb;
+  border-color: #fff;
+  box-shadow: 10px 10px 5px #888888; }
+
+footer {
+  background-color: #dbdbdb;
+  padding: 40px;
+  border-top: 1px solid #fff;
+  box-shadow: 10px 10px 5px #888888; }
+
+footer .terms a {
+  padding-right: 20px; }
+
+footer ul li:first-child {
+  margin-bottom: 6px;
+  text-transform: uppercase; }
+
 /*# sourceMappingURL=app.css.map */
