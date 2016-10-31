@@ -18,9 +18,11 @@ class CreateHoldingImagesTable extends Migration
             $table->integer('holding_id')->unsigned();
             $table->string('file_name');
             $table->timestamps();
+
+            $table->foreign('holding_id')->references('id')->on('holdings');
         });
 
-        $table->foreign('holding_id')->references('id')->on('holdings');
+        
     }
 
     /**
