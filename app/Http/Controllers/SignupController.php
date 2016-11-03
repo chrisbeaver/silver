@@ -18,6 +18,6 @@ class SignupController extends Controller
         $user = User::create(['email' => $request->email, 'username' => $request->username,
                               'password' => $request->password]);
         auth()->login($user);
-        return dd(auth()->user());
+        return redirect()->action('HoldingController@index');
     }
 }

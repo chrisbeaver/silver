@@ -22,6 +22,8 @@ Route::post('signup', 'SignupController@store');
 // Holdings
 Route::group(['prefix' => 'holdings'], function() {
 
+    Route::get('/', 'HoldingController@index');
     Route::get('create', 'HoldingController@create');
+    
     Route::post('/', 'HoldingController@store');
 });

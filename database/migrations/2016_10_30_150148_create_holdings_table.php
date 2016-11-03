@@ -17,12 +17,14 @@ class CreateHoldingsTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->char('name', 60);               // Fixed length name
-            $table->float('ounces', 6,4);           // single unit weight
+            $table->float('weight', 6,4);           // single unit weight
+            $table->enum('weight_unit', ['ounces', 'grams']);
             $table->integer('finess');              // .999 for fine etc...
             $table->integer('purchase_price');      // purchase price in USD
             $table->integer('quantity');            // quantity purchased
             $table->date('purchase_date');          // date of purchase
-            $table->enum('visibility', ['private', 'public']);
+            $table->enum('purchase_currency', ['usd'])->default('usd');
+            $table->enum('visibility', ['private', 'public'])->default('private');
             $table->timestamps();
         
             $table->foreign('user_id')->references('id')->on('users');

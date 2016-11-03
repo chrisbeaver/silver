@@ -8,27 +8,26 @@
                 <h3 class="panel-title">mySilver Registration</h3>
             </div>
             <div class="panel-body">
-            <form method="POST" action="{{ action('SignupController@store') }}">
-                {{ csrf_field() }}
+            {!! Form::open(['url' => action('SignupController@store')]) !!}
                 <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="email" name="email" class="form-control" id="email" placeholder="Email" />
+                    {!! Form::label('email', 'Email Address') !!}
+                    {!! Form::email('email', null, ['class' => 'form-control', 'placeholder' => 'yourname@domain.com']) !!}
                 </div>
                 <div class="form-group">
-                    <label for="username">Username</label>
-                    <input type="text" name="username" class="form-control" id="username" placeholder="Username" />
+                    {!! Form::label('username', 'Username') !!}
+                    {!! Form::text('username', null, ['class' => 'form-control', 'placeholder' => 'Username']) !!}
                 </div>
                 <div class="form-group">
-                    <label for="epassword">Password</label>
-                    <input type="password" name="password" class="form-control" id="password" placeholder="Password" />
+                    {!! Form::label('password', 'Password') !!}
+                    {!! Form::password('password', ['class' => 'form-control', 'placeholder' => 'Password']) !!}
                 </div>
                 <div class="form-group">
-                    <label for="password_confirm">Confirm Password</label>
-                    <input type="password" name="password_confirmation" class="form-control" id="password-confirm" placeholder="Confirm Password" />
+                    {!! Form::label('password_confirmation', 'Confirm Password') !!}
+                    {!! Form::password('password_confirmation', ['class' => 'form-control', 'placeholder' => 'Confirm Password']) !!}
                 </div>
               
                 <button type="submit" class="btn btn-primary pull-right">Submit</button>
-            </form>
+            {!! Form::close() !!}
             </div>
         </div>
     </div>
