@@ -1,10 +1,16 @@
 body {
-    background-color: #c0c0c0;  // Silver
+    background-color: #f7f7f7;  // Off White
 }
 
 body > .container {
     margin-top: 60px;
     margin-bottom: 40px;
+}
+// Primary
+.btn-primary {
+    color: #fff;
+    background-color: #3097D1;
+    border-color: #2a88bd;
 }
 
 // Navbar
@@ -21,7 +27,12 @@ body > .container {
     border-color: #fff; // white
     box-shadow: 10px 10px 5px #888888;
 }
-
+@media (min-width: 768px)
+{
+    .navbar {
+        border-radius: 0px;
+    }
+}
 // Footer
 footer {
     background-color: #dbdbdb;

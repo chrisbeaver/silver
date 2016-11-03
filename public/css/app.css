@@ -5767,7 +5767,7 @@ button.close {
     display: none !important; } }
 
 body {
-  background-color: #c0c0c0; }
+  background-color: #f7f7f7; }
 
 body > .container {
   margin-top: 60px;
@@ -5785,6 +5785,10 @@ body > .container {
   background-color: #dbdbdb;
   border-color: #fff;
   box-shadow: 10px 10px 5px #888888; }
+
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 0px; } }
 
 footer {
   background-color: #dbdbdb;
