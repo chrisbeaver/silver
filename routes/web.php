@@ -18,3 +18,10 @@ Route::get('/', function () {
 // Signup
 Route::get('signup', 'SignupController@index');
 Route::post('signup', 'SignupController@store');
+
+// Holdings
+Route::group(['prefix' => 'holdings'], function() {
+
+    Route::get('create', 'HoldingController@create');
+    Route::post('/', 'HoldingController@store');
+});

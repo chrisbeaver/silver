@@ -9,7 +9,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-        <link href="/css/app.css" rel="stylesheet">
+        <link href="{{ elixir('css/app.css') }}" rel="stylesheet">
         <script src="/js/app.js"></script>
         
         @yield('header-assets')
