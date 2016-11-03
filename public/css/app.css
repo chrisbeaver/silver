@@ -5773,6 +5773,11 @@ body > .container {
   margin-top: 60px;
   margin-bottom: 40px; }
 
+.btn-primary {
+  color: #fff;
+  background-color: #3097D1;
+  border-color: #2a88bd; }
+
 .navbar {
   border: none;
   border-bottom: 1px solid transparent; }
@@ -5782,7 +5787,8 @@ body > .container {
   margin-bottom: 20px; }
 
 .navbar-default {
-  background-color: #dbdbdb;
+  background-image: -webkit-linear-gradient(45deg, #dbdbdb, #c0c0c0);
+  background-image: linear-gradient(45deg, #dbdbdb, #c0c0c0);
   border-color: #fff;
   box-shadow: 10px 10px 5px #888888; }
 
@@ -5791,7 +5797,8 @@ body > .container {
     border-radius: 0px; } }
 
 footer {
-  background-color: #dbdbdb;
+  background-image: -webkit-linear-gradient(45deg, #dbdbdb, #c0c0c0);
+  background-image: linear-gradient(45deg, #dbdbdb, #c0c0c0);
   padding-bottom: 40px;
   border-top: 1px solid #fff;
   box-shadow: 10px 10px 5px #888888; }
