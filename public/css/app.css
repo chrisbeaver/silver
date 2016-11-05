@@ -5782,6 +5782,13 @@ body > .container {
   border: none;
   border-bottom: 1px solid transparent; }
 
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none; }
+
+.navbar .navbar-collapse {
+  text-align: center; }
+
 .navbar-nav, .navbar-form {
   margin-top: 15px; }
 
@@ -5798,6 +5805,11 @@ body > .container {
 @media (min-width: 768px) {
   .navbar {
     border-radius: 0px; } }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #555;
+  border-bottom: 1px solid white;
+  background-color: inherit; }
 
 footer {
   background-image: -webkit-linear-gradient(45deg, #dbdbdb, #c0c0c0);
