@@ -15,8 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 // Login Routes
-Route::get('login','AuthController@loginForm');
+Route::get('login','AuthController@showLoginForm');
+Route::get('logout', 'AuthController@logout');
 Route::post('login','AuthController@login');
+
+// Home
+Route::get('home', function() { return view('home'); });
 
 // Signup
 Route::get('signup', 'SignupController@index');
