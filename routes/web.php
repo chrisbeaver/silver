@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+// Login Routes
+Route::get('login','AuthController@loginForm');
+Route::post('login','AuthController@login');
 
 // Signup
 Route::get('signup', 'SignupController@index');

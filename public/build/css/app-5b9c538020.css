@@ -5782,9 +5782,12 @@ body > .container {
   border: none;
   border-bottom: 1px solid transparent; }
 
+.navbar-nav, .navbar-form {
+  margin-top: 15px; }
+
 .navbar .container {
-  margin-top: 20px;
-  margin-bottom: 20px; }
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 .navbar-default {
   background-image: -webkit-linear-gradient(45deg, #dbdbdb, #c0c0c0);
