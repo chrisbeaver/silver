@@ -5782,10 +5782,6 @@ body > .container {
   border: none;
   border-bottom: 1px solid transparent; }
 
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none; }
-
 .navbar-nav, .navbar-form {
   margin-top: 15px; }
 

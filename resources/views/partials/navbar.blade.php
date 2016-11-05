@@ -25,7 +25,7 @@
                         <li><a href="#">One more separated link</a></li> --}}
                     </ul>
                 </li>
-            <li><a href="#">Trading Post</a></li>
+                <li><a href="#">Trading Post</a></li>
             </ul>
           
             <ul class="nav navbar-nav navbar-right">
@@ -36,7 +36,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li class="text-center"><h3>{{ auth()->user()->username}}</h3></li>
+                            <li class="text-center"><h4>{{ auth()->user()->username }}</h4></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="#">Your Profile</a></li>
                             <li role="separator" class="divider"></li>
