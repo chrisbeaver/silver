@@ -22,6 +22,7 @@ class CreateHoldingsTable extends Migration
             $table->integer('finess');              // .999 for fine etc...
             $table->integer('purchase_price');      // purchase price in USD
             $table->integer('quantity');            // quantity purchased
+            $table->integer('year');                // if applicable (coin)
             $table->date('purchase_date');          // date of purchase
             $table->enum('purchase_currency', ['usd'])->default('usd');
             $table->enum('visibility', ['private', 'public'])->default('private');

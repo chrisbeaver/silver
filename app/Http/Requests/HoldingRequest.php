@@ -25,7 +25,8 @@ class HoldingRequest extends FormRequest
     {
         return [
             'name' => 'required',
-            'weight' => 'numeric', 
+            'weight' => 'numeric',
+            'year' => 'digits_between:0,'.date('Y'), 
             'weight_unit' => 'in:ounces,grams', 
             'quantity' => 'required|numeric', 
             'finess' => 'in:999,980,958,950,925,900,400', 

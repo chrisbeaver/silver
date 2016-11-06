@@ -16,6 +16,10 @@
                             {!! Form::label('name', 'Metal Name') !!}
                             {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Name for your holding']) !!}
                         </div>
+                        <div class="col-md-4">
+                            {!! Form::label('year', 'Year') !!}
+                            {!! Form::text('year', null, ['class' => 'form-control', 'placeholder' => '1964']) !!}
+                        </div>
                     </div>
                 </div>
                 <div class="form-group">
