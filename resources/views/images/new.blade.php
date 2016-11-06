@@ -4,10 +4,12 @@
 <div class="col-md-6 col-md-offset-3">
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h3 class="panel-title">Add Images</h3>
+            <h3 class="panel-title">Add Images for {{ $holding->name }}</h3>
         </div>
         <div class="panel-body">
-            <form action="/file-upload" class="dropzone" id="my-awesome-dropzone"></form>
+            <form action="/holdings/images" method="POST" class="dropzone" id="holdings-images">
+                {{ csrf_field() }}
+            </form>
         </div>
     </div>
 </div>

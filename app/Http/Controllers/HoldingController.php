@@ -8,6 +8,7 @@ use App\Http\Requests\HoldingRequest;
 use App\Holding;
 use Carbon\Carbon;
 
+
 class HoldingController extends Controller
 {
     public function index()
@@ -23,11 +24,13 @@ class HoldingController extends Controller
     public function store(HoldingRequest $request)
     {
         $date = Carbon::createFromFormat('m-d-Y', $request->purchase_date)->format('Y-m-d');
-        Holding::create(['name' => $request->name, 'weight' => $request->weight, 
+        $holding = Holding::create(['name' => $request->name, 'weight' => $request->weight, 
             'weight_unit' => $request->weight_unit, 'quantity' => $request->quantity, 
             'finess' => $request->finess, 'purchase_price' => $request->purchase_price * 100, 
             'purchase_date' => $date, 'user_id' => $request->user_id,
             'purchase_currency' => $request->purchase_currency]);
+        // Store holding in session to attach images to it.
+        session()->put('active_holding', $holding->id);
 
         return redirect()->action('ImageController@create'); 
 
