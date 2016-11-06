@@ -29,5 +29,7 @@ class HoldingController extends Controller
             'purchase_date' => $date, 'user_id' => $request->user_id,
             'purchase_currency' => $request->purchase_currency]);
 
+        return redirect()->action('ImageController@create'); 
+
     }
 }
