@@ -31,7 +31,7 @@ Route::group(['prefix' => 'holdings'], function() {
 
     Route::get('/', 'HoldingController@index');
     Route::get('create', 'HoldingController@create');
-    
+
     Route::post('/', 'HoldingController@store');
 
     Route::group(['prefix' => 'images'], function() {

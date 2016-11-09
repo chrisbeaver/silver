@@ -13,7 +13,9 @@ class HoldingController extends Controller
 {
     public function index()
     {
-        return view('holdings.index');
+        $holdings = auth()->user()->holdings;
+        return dd($holdings);
+        return view('holdings.index', compact('holdings'));
     }
 
     public function create()
@@ -35,4 +37,5 @@ class HoldingController extends Controller
         return redirect()->action('ImageController@create'); 
 
     }
+
 }

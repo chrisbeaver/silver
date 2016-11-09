@@ -40,6 +40,6 @@ class ImageController extends Controller
         Storage::makeDirectory('holding-images/'.auth()->user()->id.'/thumbnails');
         $img->save(storage_path('app/holding-images/'.auth()->user()->id.'/thumbnails/'.$file_name));
         
-       // HoldingImage::create(['holding_id' => $request->holding_id, 'path' => $path]);
+        HoldingImage::create(['holding_id' => $request->holding_id, 'path' => $path]);
     }
 }
