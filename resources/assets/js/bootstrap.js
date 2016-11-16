@@ -38,6 +38,9 @@ Vue.http.interceptors.push((request, next) => {
  */
 
 window.Dropzone = require('dropzone');
+
+// var $ = require( 'jquery' );
+window.dt = require( 'datatables.net' )( window, $ );
 // import Echo from "laravel-echo"
 
 // window.Echo = new Echo({
