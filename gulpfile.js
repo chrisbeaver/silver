@@ -16,6 +16,5 @@ require('laravel-elixir-vue-2');
 elixir((mix) => {
     mix.sass('app.scss')
        .rollup('app.js')
-       .version('css/app.css')
-       .version('js/app.js');
+       .version(['css/app.css', 'js/app.js']);
 });
