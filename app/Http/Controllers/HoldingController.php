@@ -14,7 +14,7 @@ class HoldingController extends Controller
     public function index()
     {
         $holdings = auth()->user()->holdings;
-        return dd($holdings);
+        // return dd($holdings);
         return view('holdings.index', compact('holdings'));
     }
 
@@ -36,6 +36,11 @@ class HoldingController extends Controller
 
         return redirect()->action('ImageController@create'); 
 
+    }
+
+    public function myHoldingsDT()
+    {
+        
     }
 
 }
