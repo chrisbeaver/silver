@@ -1,32 +1,34 @@
 @extends('layouts.main')
 
 @section('main-content')
-<div class="row">
-    <div class="col-md-6 col-md-offset-3">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">Stack Trackers Registration</h3>
-            </div>
-            <div class="panel-body">
+<div class="columns" style="margin-bottom: 240px;">
+    <div class="column is-one-third is-offset-one-third">
+        <div class="card is-fullwidth">
+            <header class="card-header">
+                <p class="card-header-title">
+                    Create Your Account
+                </p>
+            </header>
+            <div class="card-content">
             {!! Form::open(['url' => action('SignupController@store')]) !!}
-                <div class="form-group">
-                    {!! Form::label('email', 'Email Address') !!}
-                    {!! Form::email('email', null, ['class' => 'form-control', 'placeholder' => 'yourname@domain.com']) !!}
-                </div>
-                <div class="form-group">
-                    {!! Form::label('username', 'Username') !!}
-                    {!! Form::text('username', null, ['class' => 'form-control', 'placeholder' => 'Username']) !!}
-                </div>
-                <div class="form-group">
-                    {!! Form::label('password', 'Password') !!}
-                    {!! Form::password('password', ['class' => 'form-control', 'placeholder' => 'Password']) !!}
-                </div>
-                <div class="form-group">
-                    {!! Form::label('password_confirmation', 'Confirm Password') !!}
-                    {!! Form::password('password_confirmation', ['class' => 'form-control', 'placeholder' => 'Confirm Password']) !!}
-                </div>
-              
-                <button type="submit" class="btn btn-primary pull-right">Submit</button>
+                <label class="label">Email</label>
+                <p class="control">
+                    <input name="email" class="input is-success" type="email" placeholder="name@email.com" required autofocus />
+                </p>
+                <label class="label">Username</label>
+                <p class="control">
+                    <input name="username" class="input is-success" type="text" placeholder="Username" required />
+                </p>
+                <label class="label">Password</label>
+                <p class="control">
+                    <input name="password" class="input is-success" type="password" placeholder="Password" required />
+                </p>
+                <label class="label">Password Confirmation</label>
+                <p class="control">
+                    <input name="password_confirmation" class="input is-success" type="password" placeholder="Password Confirmation" required />
+                </p>
+                
+                <button type="submit" class="button is-primary">Create Account</button>
             {!! Form::close() !!}
             </div>
         </div>

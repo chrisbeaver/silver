@@ -6631,7 +6631,7 @@ a {
 }
 
 .nav-item img {
-  max-height: 40px;
+  max-height: 44px;
 }
 
 .btn-primary {
@@ -6681,16 +6681,6 @@ footer {
   background-image: linear-gradient(45deg, #dbdbdb, #c0c0c0);
   padding-bottom: 40px;
   border-top: 1px solid #fff;
-  box-shadow: 10px 10px 5px #888888;
-}
-
-footer .terms a {
-  padding-right: 20px;
-}
-
-footer ul li:first-child {
-  margin-bottom: 6px;
-  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=app.css.map */

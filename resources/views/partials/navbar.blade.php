@@ -1,7 +1,7 @@
 <nav class="nav has-shadow">
   <div class="container">
     <div class="nav-left">
-      <a class="nav-item is-brand" href="#">
+      <a class="nav-item is-brand is-tab" href="#">
         <img src="/images/navbar_logo.png" alt="Bulma logo">
       </a>
     </div>
@@ -36,14 +36,14 @@
         Blog
       </a>
 
-      <span class="nav-item">
+      <span class="nav-item is-tab">
         <a class="button" >
           <span class="icon">
             <i class="fa fa-twitter"></i>
           </span>
           <span>Tweet</span>
         </a>
-        <a class="button is-primary" href="#">
+        <a class="button is-primary is-tab" href="#">
           <span class="icon">
             <i class="fa fa-download"></i>
           </span>
