@@ -1,15 +1,16 @@
-<footer>
+<footer class="footer">
     <div class="container">
-        <hr /> 
-        <div class="row">
-            <div class="col-md-4 terms">
-                <a href="#">Terms of Service</a>    
-                <a href="#">Privacy</a>    
-                <a href="#">Security</a>
-            </div>
-            <div class="col-md-3-offset-5">
-                <p class="muted pull-right">© {{ date('Y') }} cbCodeStudio, LLC. All rights reserved</p>
-            </div>
+        <div class="content has-text-centered">
+            <p>
+                <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
+            </p>
+            <p>
+                <a class="icon" href="https://github.com/jgthms/bulma">
+                  <i class="fa fa-github"></i>
+                </a>
+            </p>
         </div>
     </div>
 </footer>

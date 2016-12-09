@@ -6630,6 +6630,10 @@ a {
   text-decoration: none;
 }
 
+.nav-item img {
+  max-height: 40px;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #3097D1;
