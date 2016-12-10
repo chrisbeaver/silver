@@ -22,7 +22,8 @@
                         <input name="password" class="input is-success" type="password" placeholder="name@email.com" required autofocus />
                     </p>
                     
-                    <button type="submit" class="button is-primary">Login</button>
+                    <button type="submit" class="button is-primary is-fullwidth">Login</button>
+                    
                 {!! Form::close() !!}
             </div>
         </div>

@@ -13,22 +13,22 @@
             {!! Form::open(['url' => action('SignupController@store')]) !!}
                 <label class="label">Email</label>
                 <p class="control">
-                    <input name="email" class="input is-success" type="email" placeholder="name@email.com" required autofocus />
+                    <input name="email" class="input" type="email" placeholder="name@email.com" required autofocus />
                 </p>
                 <label class="label">Username</label>
                 <p class="control">
-                    <input name="username" class="input is-success" type="text" placeholder="Username" required />
+                    <input name="username" class="input" type="text" placeholder="Username" required />
                 </p>
                 <label class="label">Password</label>
                 <p class="control">
-                    <input name="password" class="input is-success" type="password" placeholder="Password" required />
+                    <input name="password" class="input" type="password" placeholder="Password" required />
                 </p>
                 <label class="label">Password Confirmation</label>
                 <p class="control">
-                    <input name="password_confirmation" class="input is-success" type="password" placeholder="Password Confirmation" required />
+                    <input name="password_confirmation" class="input" type="password" placeholder="Password Confirmation" required />
                 </p>
                 
-                <button type="submit" class="button is-primary">Create Account</button>
+                <button type="submit" class="button is-primary is-fullwidth">Create Account</button>      
             {!! Form::close() !!}
             </div>
         </div>
