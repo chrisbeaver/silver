@@ -9,10 +9,10 @@
             </h1>
             <div class="columns">
                 <div class="column is-third is-offset-one-third">
-                    <a class="button is-outlined is-primary" href="{{ action('SignupController@index') }}">Start Building Your Stack</a>
+                    <a class="button is-outlined is-primary" href="{{ action('SignupController@index') }}"><strong>Start Building Your Stack</strong></a>
                     &nbsp;
                     &nbsp;
-                    <a class="button is-outlined is-info" href="{{ action('SignupController@index') }}">Browse Stacks</a>
+                    <a class="button is-outlined is-info" href="{{ action('SignupController@index') }}"><strong>Browse Stacks</strong></a>
                 </div>
             </div>
         </div>
